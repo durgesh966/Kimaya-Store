@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  z-index: 99;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  padding: 0px 30px;
+}
+
+.logotext {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.menuText {
+  text-align: center;
+}
+
+.nav-link {
+  margin: 0px 20px;
+}
+
+.hero {
+  background-image: url(../images/asafoetida-hing-spice-500x500.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 20, 51, 0.8);
+  z-index: -1;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.card-effect {
+  width: 100%;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 25px 35px;
+  transition: all 0.35s ease;
+}
+
+.price {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.price-span1 {
+  padding: 0px 4px;
+}
+
+.price-span2 {
+  text-decoration: line-through;
+  padding: 0px 4px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card-effect:hover {
+  transform: translateY(5px);
+}
+
+
+/* =======counter Design======= */
+
+.counter-section {
+  background-color: #98AFC7;
+}
+
+.counter-section p {
+  color: white;
+  text-transform: uppercase;
+}
+
+
+/* project====== */
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .project img {
+  height: 250px;
+  width: 300px;
+  margin-top: 30px;
+  transition: all 1s;
+}
+
+.project:hover img {
+  transform: scale(1.1); 
+  filter: brightness(80%); 
+} */
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  margin-top: 30px;
+  transition: all 1s;
+}
+
+.project img {
+  left: 50px;
+  height: 250px;
+  width: 300px;
+}
+
+.project:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .project {
+    width: 100%; /* Make the container full width */
+  }
+  .project img {
+    height: 250px;
+    width: 300px;
+  }
+  .project:hover {
+    transform: scale(1.3);
+    z-index: 1;
+  }
+}
+
+
+/* review section */
+
+.testmonial-box-container {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center
+}
+
+.name-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-review strong {
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.name-review span {
+  color: #979797;
+  font-size: 0.9rem;
+}
+
+.text-review {
+  padding-top: 10px;
+  font-size: 1rem;
+  color: #4b4b4b;
+}
+
+.testmonial-box-container:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+.box-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-pic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.star {
+  color: #f9d71c;
+}
+
+.footer-link span {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logo-img{
+  border-radius: 40%;
+}
+
+
+.gallery{
+  border-radius: 50px;
+  padding: 5px;
+}
